@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root{
+    --first-color:#7300aa;
+    --second-color:#edba60;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Rubik", cursive;
+  }
+
+*{
+    font-family: "Baloo Thambi 2", cursive;
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;  
+}
+.btn{
+    height: 4rem;
+    width: 14rem;
+    background:var(--first-color);
+    color:#ffff;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+    background:var(--second-color);
+}
+.head1 h1{
+    
+        font-size: 2rem;
+        color: #363957;
+        
+        margin-left: 10%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+                                                                                                                                                                                                                                                                                                                        
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    border: 1.5px solid #666;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding:1.2rem 1rem ;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+.accordion-link{
+    font-size: 2rem;
+    color: #363957;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordion-link i{
+    color: #363957;
+    padding: .5rem;
+}
+.accordion-link .ion-md-arrow-dropup{
+    display: none;
+}
+.card{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f4f4;
+    color: #363957;
+    font-size: 1.4rem;
+    transition: max-height 650ms;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.card form{
+    background-color: rgb(226, 224, 224);
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
+    outline: none;
+}
+.card form #Cardno{
+    background-color: #ffff;
+    border: 1px solid #666;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #363957;
+    font-size: 1.5rem;
+    outline: none;
+}
+.card form #month{
+    background-color: #ffff;
+    border: 1px solid #666;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: #363957;
+    font-size: 1.5rem;
+    outline: none;
+}
+.card form #year{
+    background-color: #ffff;
+    border: 1px solid #666;
+    width: 20%;
+    margin-left: 9%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: #363957;
+    font-size: 1.5rem;
+    outline: none;
+}
+.card form #cvv{
+    background-color: #ffff;
+    border: 1px solid #666;
+    width: 20%;
+    margin-left: 9%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: #363957;
+    font-size: 1.5rem;
+    outline: none;
+
+}
+.card form #name{
+    background-color: #ffff;
+    border: 1px solid #666;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #363957;
+    font-size: 1.5rem;
+    outline: none;
+}
+.card  img{
+    border: 1px solid #666;
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+}
+
+ 
+.accordion-item:target .card{
+    max-height: 25rem;
+    background-color: #fff;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-dropdown{
+    display: none;
+}
+.accordion-item:target .accordion-link .ion-md-arrow-dropup{
+    display: block;
+} 
+
+
+.icons a{
+    position: relative;
+    font-size: 2rem;
+    color: #ffff;
+    top: 0px;
+    float: right;
+    margin-right: 5%;
+}
+.icons a:hover{
+  color: var(--second-color);
+}
+ 
+.head2 h1{
+    
+    font-size: 2rem;
+    color: #363957;
+    margin-left: 10%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+                                                                                                                                                                                                                                                                                                                    
+}
+ .container{
+    display: flex;
+    flex-direction: row;
+    border: 1.5px solid #666;
+    padding:3rem ;
+    border-radius: 15px;
+}
+
+.container .box1 h3{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #363957;
+    letter-spacing: 0.5px;
+}
+.container .box1 p{
+    font-size: 2rem;
+    color: #363957;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.container .box1 p span{
+    font-size: 2rem;
+    color: #363957;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+.container .box1 .btn{
+    margin-top: 30px;
+    cursor: pointer;
+    border:2px solid var(--first-color);
+    background-color: #ffff;
+    color: #363957;
+    outline: none;
+}
+.container .box1 .btn:hover{
+    border:2px solid var(--second-color);
+    background-color: var(--second-color);
+    color: #ffff;
+}
+
+
+.add .btn{
+    position: relative;
+    margin-top: 38rem;
+    width: 100%;
+    cursor: pointer;
+    border:2px solid var(--first-color);
+    background-color: #ffff;
+    color: #363957;
+    outline: none;
+}
+.add .btn:hover{
+    border:2px solid var(--second-color);
+    background-color: var(--second-color);
+    color: #ffff;
+}
