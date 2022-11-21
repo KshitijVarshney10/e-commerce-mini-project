@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+
+:root{
+    --first-color:#7300aa;
+    --second-color:#edba60;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Rubik", cursive;
+  }
+*{
+    font-family: "Baloo Thambi 2", cursive;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+*::selection{
+    background:var(--second-color);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background: var(--first-color);
+}
+
+.btn{
+    height: 4rem;
+    width: 14rem;
+    background:var(--first-color);
+    color:#ffff;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+    background:var(--second-color);
+}
+.container{
+    position: absolute;
+    background-color: #f4f4f4;
+    height: 92vh;
+    width: 90%;
+    margin: 2.5% 5%;
+    border-radius: 15px;
+}
+.container h1{
+    font-size: 2rem;
+    color: #363957;
+    margin: 20px;
+    margin-left: 30px;
+    border-bottom: .1rem solid rgba(39, 24, 24, 0.3);
+}
+
+.container .icons{
+    position: relative;
+    font-size: 2rem;
+    color: #363957;
+    top: -50px;
+    float: right;
+    margin-right: 5%;
+    
+}
+.container .icons a:hover{
+  color: var(--second-color);
+}
+.container .detail{
+   width: 90%;
+   margin: 2.5% 5% 2.5% 5%;
+   
+}
+.container .detail #inputfield{
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1.5px solid #363957;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    outline: none;
+    font-size: 1.5rem;
+}
+.container .detail .btn{
+   
+    margin-top: 1rem;
+}
+
+
